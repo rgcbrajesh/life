@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narendra Modi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container-fluid {
+        background-image: linear-gradient(
+          to right,
+          #d17d6b,
+          #b16962,
+          #905757,
+          #70464a,
+          #50363b,
+          #53333a,
+          #553038,
+          #582d37,
+          #7d3341,
+          #a23848,
+          #c83d4c,
+          #ee434b
+        );
+      }
+      @media screen and (max-width: 350px) {
+        #modi {
+          height: 200px;
+          width: 170px;
+        }
+        #btn {
+          margin: 0px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>RGC</b> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"><b>HY</b></a>
+              </li>
+              <li class="nav-item dropdown" style="z-index: 1000000">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PEOPLE
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/index.html"
+                      >Narendra Modi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/amit.html"
+                      >Amitabh bacchan</a
+                    >
+                  </li>
+
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/yogi.html"
+                      >Yogi Adityanath</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/rahul.html">Rahul Gandhi</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-4">
+        <div id="list-example" class="list-group sticky-top">
+          <a class="list-group-item list-group-item-action" href="#list-item-1"
+            >Narendra Modi</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-2"
+            >Early life and education</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-3"
+            >Early political career</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-4"
+            >Chief Minister of Gujarat</a
+          >
+        </div>
+      </div>
+      <div class="col-8">
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#list-example"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example"
+          tabindex="0"
+        >
+          <h4 id="list-item-1">
+            <center>
+              <img
+                id="modi"
+                src="data:image/jpeg;base64,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"
+                height="300px"
+                width="300px"
+              />
+            </center>
+            <b>NARENDRA MODI</b>
+          </h4>
+          <p>
+            Narendra Damodardas Modi (Gujarati: [ˈnəɾendɾə dɑmodəɾˈdɑs ˈmodiː]
+            (listen); born 17 September 1950)[b] is an Indian politician serving
+            as the 14th and current Prime Minister of India since 2014. Modi was
+            the Chief Minister of Gujarat from 2001 to 2014 and is the Member of
+            Parliament from Varanasi. He is a member of the Bharatiya Janata
+            Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a
+            right-wing Hindu nationalist paramilitary volunteer organisation. He
+            is the longest serving prime minister from outside the Indian
+            National Congress. Modi was born and raised in Vadnagar in
+            northeastern Gujarat, where he completed his secondary education. He
+            was introduced to the RSS at age eight. He has reminisced about
+            helping out after school at his father's tea stall at the Vadnagar
+            railway station. At age 18, Modi was married to Jashodaben Chimanlal
+            Modi, whom he abandoned soon after. He first publicly acknowledged
+            her as his wife more than four decades later when required to do so
+            by Indian law, but has made no contact with her since. Modi has
+            asserted he had travelled in northern India for two years after
+            leaving his parental home, visiting a number of religious centres,
+            but few details of his travels have emerged. Upon his return to
+            Gujarat in 1971, he became a full-time worker for the RSS. After the
+            state of emergency was declared by prime minister Indira Gandhi in
+            1975, Modi went into hiding. The RSS assigned him to the BJP in 1985
+            and he held several positions within the party hierarchy until 2001,
+            rising to the rank of general secretary.[c] Modi was appointed Chief
+            Minister of Gujarat in 2001 due to Keshubhai Patel's failing health
+            and poor public image following the earthquake in Bhuj. Modi was
+            elected to the legislative assembly soon after. His administration
+            has been considered complicit in the 2002 Gujarat riots in which
+            1044 people were killed, three-quarters of whom were Muslim,[d] or
+            otherwise criticised for its management of the crisis. A Special
+            Investigation Team appointed by the Supreme Court of India found no
+            evidence to initiate prosecution proceedings against Modi
+            personally.[e] While his policies as chief minister—credited with
+            encouraging economic growth—have received praise, his administration
+            was criticised for failing to significantly improve health, poverty
+            and education indices in the state.[f] Modi led the BJP in the 2014
+            general election which gave the party a majority in the lower house
+            of Indian parliament, the Lok Sabha, the first time for any single
+            party since 1984. Modi's administration has tried to raise foreign
+            direct investment in the Indian economy and reduced spending on
+            healthcare, education, and social welfare programmes. Modi
+            centralised power by abolishing the Planning Commission and
+            replacing it with the NITI Aayog. He began a high-profile sanitation
+            campaign, controversially initiated a demonetisation of
+            high-denomination banknotes and a transformation of the taxation
+            regime, and weakened or abolished environmental and labour laws. He
+            oversaw the country's response to the COVID-19 pandemic. As Prime
+            Minister, Modi has received consistently high approval
+            ratings.[12][13][14] Under Modi's tenure, India has experienced
+            democratic backsliding.[15][16][g] Following his party's victory in
+            the 2019 general election, his administration revoked the special
+            status of Jammu and Kashmir, introduced the Citizenship Amendment
+            Act and three controversial farm laws, which prompted widespread
+            protests and sit-ins across the country, resulting in a formal
+            repeal of the latter. Described as engineering a political
+            realignment towards right-wing politics, Modi remains a figure of
+            controversy domestically and internationally over his Hindu
+            nationalist beliefs and his handling of the 2002 Gujarat riots,
+            cited as evidence of an exclusionary social agenda.
+          </p>
+          <h4 id="list-item-2"><b>EARLY LIFE AND EDUCATION</b></h4>
+          <p>
+            Narendra Damodardas Modi was born on 17 September 1950 to a Gujarati
+            Hindu family of grocers in Vadnagar, Mehsana district, Bombay State
+            (present-day Gujarat). He was the third of six children born to
+            Damodardas Mulchand Modi (c. 1915–1989) and Hiraben Modi
+            (1923–2022).[28][b][29] Modi's family belonged to the
+            Modh-Ghanchi-Teli (oil-presser) community,[30][31][32] which is
+            categorised as an Other Backward Class by the Indian
+            government.[32][33] Modi had only infrequently spoken of his family
+            background during his 13 years as chief minister of Gujarat. In the
+            run up to the 2014 national elections, he began to regularly draw
+            attention to his low-ranking social origins and to having to work as
+            a child in his father's tea shop on the Vadnagar railway station
+            platform,[34] a description that the evidence of neighbours does not
+            entirely corroborate.[35][36] Modi completed his higher secondary
+            education in Vadnagar in 1967, where teachers described him as an
+            average student and a keen gifted debater, with interest in
+            theatre.[37] Modi preferred playing larger-than-life characters in
+            theatrical productions, which has influenced his political
+            image.[38][39] When eight years old, Modi was introduced to the
+            Rashtriya Swayamsevak Sangh (RSS) and began attending its local
+            shakhas (training sessions). There, Modi met Lakshmanrao Inamdar,
+            popularly known as Vakil Saheb, who inducted him as a balswayamsevak
+            (junior cadet) in the RSS and became his political mentor.[40] While
+            Modi was training with the RSS, he also met Vasant Gajendragadkar
+            and Nathalal Jaghda, Bharatiya Jana Sangh leaders who were founding
+            members of the BJP's Gujarat unit in 1980.[41] In a custom
+            traditional to Narendra Modi's caste, his family arranged a
+            betrothal to a girl, Jashodaben Chimanlal Modi, leading to their
+            marriage when she was 17 and he was 18.[42][43] Soon afterwards, he
+            abandoned his bride,[44] and left home, never divorcing her, but the
+            marriage remaining unmentioned in Modi's public pronouncements for
+            many decades.[45] In April 2014, shortly before the national
+            elections that swept him to power, Modi publicly affirmed that he
+            was married and his spouse was Jashodaben; the couple has remained
+            married, but estranged.[46] Reportedly, their marriage was never
+            consummated, and he kept it a secret because otherwise he could not
+            have become a pracharak in the puritan Rashtriya Swayamsevak
+            Sangh.[47][48] Modi spent the ensuing two years travelling across
+            Northern and North-eastern India, though few details of where he
+            went have emerged.[49] In interviews, Modi has described visiting
+            Hindu ashrams founded by Swami Vivekananda: the Belur Math near
+            Kolkata, followed by the Advaita Ashrama in Almora and the
+            Ramakrishna Mission in Rajkot. Modi remained only a short time at
+            each, since he lacked the required college education.[50]
+            Vivekananda has been described as a large influence in Modi's
+            life.[51] In the early summer of 1968, Modi reached the Belur Math
+            but was turned away, after which Modi wandered through Calcutta,
+            West Bengal and Assam, stopping in Siliguri and Guwahati. Modi then
+            went to the Ramakrishna Ashram in Almora, where he was again
+            rejected, before travelling back to Gujarat via Delhi and Rajasthan
+            in 1968–69. Sometime in late 1969 or early 1970, Modi returned to
+            Vadnagar for a brief visit before leaving again for
+            Ahmedabad.[52][53] There, Modi lived with his uncle, working in the
+            latter's canteen at the Gujarat State Road Transport
+            Corporation.[54] In Ahmedabad, Modi renewed his acquaintance with
+            Inamdar, who was based at the Hedgewar Bhavan (RSS headquarters) in
+            the city.[55][56][57] Modi's first known political activity as an
+            adult was in 1971 when he, as per his remarks, joined a Jana Sangh
+            Satyagraha in Delhi led by Atal Bihari Vajpayee to enlist for the
+            battlefield during the Bangladesh Liberation War.[58][59] The Indira
+            Gandhi-led central government disallowed open support for the Mukti
+            Bahini, and Modi says he was put in Tihar Jail for a short
+            period.[60][61][62] After the Indo-Pakistani War of 1971, he stopped
+            working for his uncle and became a full-time pracharak (campaigner)
+            for the RSS,[63] working under Inamdar.[64] Shortly before the war,
+            Modi took part in a non-violent protest against the Indian
+            government in New Delhi, for which he was arrested (as per his
+            claim); this has been cited as a reason for Inamdar electing to
+            mentor him.[64] Many years later Modi would co-author a biography of
+            Inamdar, published in 2001.[65] Modi's claim that he was part of a
+            Satyagraha led to a political war.[61] Applications were filed with
+            the PMO under the RTI Act seeking details of his arrest. In reply,
+            the PMO claimed that it maintains official records on Modi only
+            since he took charge as the Prime Minister of India in 2014. Despite
+            this claim, the official website of the PMO contains specific
+            information about Modi which dates back to the 1950s.[66][67] In
+            1978 Modi received a Bachelor of Arts degree in political science
+            from the School of Open Learning (SOL)[68] at the University of
+            Delhi,[47] graduating with a third class.[69] Five years later, in
+            1983, he received a Master of Arts degree in political science from
+            Gujarat University, graduating with a first class[70][71] as an
+            external distance learning student.[72] There is a controversy
+            surrounding his educational qualification.[73][74] Replying to an
+            RTI query, the SOL said it did not have any data of students who
+            received a BA degree in 1978.[68] Jayantibhai Patel, a former
+            political science professor of Gujarat University, claimed that the
+            subjects listed in Modi's MA degree were not offered by the
+            university when Modi was studying there.
+          </p>
+          <h4 id="list-item-3"><b> EARLY POLITICAL CAREER</b></h4>
+          <p>
+            In June 1975, Prime Minister Indira Gandhi declared a state of
+            emergency in India which lasted until 1977. During this period,
+            known as "The Emergency", many of her political opponents were
+            jailed and opposition groups were banned.[77][78] Modi was appointed
+            general secretary of the "Gujarat Lok Sangharsh Samiti", an RSS
+            committee co-ordinating opposition to the Emergency in Gujarat.
+            Shortly afterwards, the RSS was banned.[79] Modi was forced to go
+            underground in Gujarat and frequently travelled in disguise to avoid
+            arrest. He became involved in printing pamphlets opposing the
+            government, sending them to Delhi and organising
+            demonstrations.[80][81] Modi was also involved with creating a
+            network of safe houses for individuals wanted by the government, and
+            in raising funds for political refugees and activists.[82] During
+            this period, Modi wrote a book in Gujarati, Sangharsh Ma Gujarat (In
+            The Struggles of Gujarat), describing events during the
+            Emergency.[83][84] Among the people he met in this role was trade
+            unionist and socialist activist George Fernandes, as well as several
+            other national political figures.[85] In his travels during the
+            Emergency, Modi was often forced to move in disguise, once dressing
+            as a monk, and once as a Sikh.[86] Modi became an RSS sambhag
+            pracharak (regional organiser) in 1978, overseeing RSS activities in
+            the areas of Surat and Vadodara, and in 1979 he went to work for the
+            RSS in Delhi, where he was put to work researching and writing the
+            RSS's version of the history of the Emergency. He returned to
+            Gujarat a short while later, and was assigned by the RSS to the BJP
+            in 1985. In 1987 Modi helped organise the BJP's campaign in the
+            Ahmedabad municipal election, which the BJP won comfortably; Modi's
+            planning has been described as the reason for that result by
+            biographers.[87][88] After L. K. Advani became president of the BJP
+            in 1986, the RSS decided to place its members in important positions
+            within the BJP; Modi's work during the Ahmedabad election led to his
+            selection for this role, and Modi was elected organising secretary
+            of the BJP's Gujarat unit later in 1987.[89] Modi with Atal Bihari
+            Vajpayee in c. 2001 Modi rose within the party and was named a
+            member of the BJP's National Election Committee in 1990, helping
+            organise L. K. Advani's 1990 Ram Rath Yatra in 1990 and Murli
+            Manohar Joshi's 1991–92 Ekta Yatra (Journey for Unity).[37][90][91]
+            However, he took a brief break from politics in 1992, instead
+            establishing a school in Ahmedabad; friction with Shankersinh
+            Vaghela, a BJP MP from Gujarat at the time, also played a part in
+            this decision.[91] Modi returned to electoral politics in 1994,
+            partly at the insistence of Advani, and as party secretary, Modi's
+            electoral strategy was considered central to the BJP victory in the
+            1995 state assembly elections.[92][93] In November of that year Modi
+            was appointed BJP national secretary and transferred to New Delhi,
+            where he assumed responsibility for party activities in Haryana and
+            Himachal Pradesh.[94] The following year, Shankersinh Vaghela, a
+            prominent BJP leader from Gujarat, defected to the Indian National
+            Congress (Congress, INC) after losing his parliamentary seat in the
+            Lok Sabha elections.[37] Modi, on the selection committee for the
+            1998 Assembly elections in Gujarat, favoured supporters of BJP
+            leader Keshubhai Patel over those supporting Vaghela to end
+            factional division in the party. His strategy was credited as key to
+            the BJP winning an overall majority in the 1998 elections,[95] and
+            Modi was promoted to BJP general secretary (organisation) in May of
+            that year
+          </p>
+          <h4 id="list-item-4"><b>CHEIF MINISTER OF GUJRAT</b></h4>
+          <p>
+            In 2001, Keshubhai Patel's health was failing and the BJP lost a few
+            state assembly seats in by-elections. Allegations of abuse of power,
+            corruption and poor administration were made, and Patel's standing
+            had been damaged by his administration's handling of the earthquake
+            in Bhuj in 2001.[95][97][98] The BJP national leadership sought a
+            new candidate for the chief ministership, and Modi, who had
+            expressed misgivings about Patel's administration, was chosen as a
+            replacement.[37] Although BJP leader L. K. Advani did not want to
+            ostracise Patel and was concerned about Modi's lack of experience in
+            government, Modi declined an offer to be Patel's deputy chief
+            minister, telling Advani and Atal Bihari Vajpayee that he was "going
+            to be fully responsible for Gujarat or not at all". On 3 October
+            2001 he replaced Patel as Chief Minister of Gujarat, with the
+            responsibility of preparing the BJP for the December 2002
+            elections.[99] Modi was sworn in as Chief Minister on 7 October
+            2001,[100] and entered the Gujarat state legislature on 24 February
+            2002 by winning a by-election to the Rajkot – II constituency,
+            defeating Ashwin Mehta of the INC.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="/index1.html">
+      <button
+        id="btn"
+        style="
+          height: 60px;
+          width: 320px;
+          margin-left: 500px;
+          background-image: linear-gradient(
+            to right,
+            #d17d6b,
+            #b16962,
+            #905757,
+            #70464a,
+            #50363b,
+            #53333a,
+            #553038,
+            #582d37,
+            #7d3341,
+            #a23848,
+            #c83d4c,
+            #ee434b
+          );
+        "
+      >
+        Scroll To Top
+      </button></a
+    >
+  </body>
+</html>

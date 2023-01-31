@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amitabh Bachhan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container-fluid {
+        background-image: linear-gradient(
+          to right,
+          #d17d6b,
+          #b16962,
+          #905757,
+          #70464a,
+          #50363b,
+          #53333a,
+          #553038,
+          #582d37,
+          #7d3341,
+          #a23848,
+          #c83d4c,
+          #ee434b
+        );
+      }
+      @media screen and (max-width: 350px) {
+        #modi {
+          height: 200px;
+          width: 170px;
+        }
+        #btn {
+          margin: 0px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>RGC</b> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#"><b>HY</b></a>
+              </li>
+              <li class="nav-item dropdown" style="z-index: 1000000">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PEOPLE
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/index1.html"
+                      >Narendra Modi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/amit.html"
+                      >Amitabh bacchan</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="/yogi.html"
+                      >Yogi Adityanath</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/rahul.html">Rahul Gandhi</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-4">
+        <div id="list-example" class="list-group sticky-top">
+          <a class="list-group-item list-group-item-action" href="#list-item-1"
+            >Amitabh Bachchan</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-2"
+            >Early life and family</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-3"
+            >Early career
+          </a>
+          <a class="list-group-item list-group-item-action" href="#list-item-4"
+            >Other work</a
+          >
+        </div>
+      </div>
+      <div class="col-8">
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#list-example"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example"
+          tabindex="0"
+        >
+          <h4 id="list-item-1">
+            <center>
+              <img
+                id="modi"
+                src="data:image/jpeg;base64,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"
+                height="300px"
+                width="300px"
+              />
+            </center>
+            <b>Amitabh Bachchan</b>
+          </h4>
+          <p>
+            Amitabh Bachchan (pronounced [əmɪˈt̪ɑːbʱ ˈbətːʃən]; born as Amitabh
+            Shrivastav;[1] 11 October 1942[7]) is an Indian actor, film
+            producer, television host, occasional playback singer and former
+            politician known for his work in Hindi cinema. He is regarded as one
+            of the most successful and influential actors in the history of
+            Indian cinema.[8] Referred to as the Shahenshah of Bollywood (in
+            reference to his 1988 film Shahenshah), Sadi ka Mahanayak (Hindi
+            for, "Greatest actor of the century"), Star of the Millennium, or
+            Big B.[9] His dominance in the Indian movie scene during the
+            1970s–1980s made the French director François Truffaut call it a
+            "one-man industry".[10] Bachchan was born in 1942 in Allahabad to
+            the Hindi poet Harivansh Rai Bachchan and his wife, the social
+            activist Teji Bachchan. He was educated at Sherwood College,
+            Nainital, and Kirori Mal College, University of Delhi. His film
+            career started in 1969 as a voice narrator in Mrinal Sen's film
+            Bhuvan Shome. He first gained popularity in the early 1970s for
+            films such as Zanjeer, Deewaar and Sholay, and achieved greater
+            stardom in later years, dubbed India's "angry young man" for some
+            several of his on-screen roles in Hindi films. He has since appeared
+            in over 200 Indian films in a career spanning more than five
+            decades,[11] He has won numerous accolades in his career, including
+            four National Film Awards as Best Actor, Dadasaheb Phalke Award as
+            lifetime achievement award and many awards at international film
+            festivals and award ceremonies. He has won sixteen Filmfare Awards
+            and is the most nominated performer in any major acting category at
+            Filmfare, with 42 nominations overall. In addition to acting,
+            Bachchan has worked as a playback singer, film producer and
+            television presenter. He has hosted several seasons of the game show
+            Kaun Banega Crorepati, India's version of the game show franchise,
+            Who Wants to Be a Millionaire?. He also entered politics for a time
+            in the 1980s. The Government of India honoured him with the Padma
+            Shri in 1984, the Padma Bhushan in 2001 and the Padma Vibhushan in
+            2015 for his contributions to the arts. The Government of France
+            honoured him with its highest civilian honour, Knight of the Legion
+            of honour, in 2007 for his exceptional career in the world of cinema
+            and beyond. Bachchan also made an appearance in a Hollywood film,
+            Baz Luhrmann's The Great Gatsby (2013), in which he played a
+            non-Indian Jewish character, Meyer Wolfsheim. Beyond the Indian
+            subcontinent, he acquired a large overseas following of the South
+            Asian diaspora, as well as others, in markets including Africa
+            (South Africa, Eastern Africa and Mauritius), the Middle East
+            (especially UAE and Egypt), the United Kingdom, Russia, Central
+            Asia, the Caribbean (Guyana, Suriname, and Trinidad and Tobago),
+            Oceania (Fiji, Australia, and New Zealand), Canada and the United
+            States
+          </p>
+          <h4 id="list-item-2"><b>EARLY LIFE AND FAMILY</b></h4>
+          <p>
+            Bachchan was born on 11 October 1942 in Allahabad to the Hindi poet
+            Harivansh Rai Bachchan, and social activist Teji Bachchan.[13]
+            Harivansh Rai Bachchan was an Awadhi Hindu Kayastha,[14] who was
+            fluent in Awadhi,[15] Hindi and Urdu.[16] Harivansh's ancestors came
+            from a village called Babupatti, in the Raniganj tehsil, in the
+            Pratapgarh district, in the present-day state of Uttar Pradesh, in
+            India.[17] Teji Bachchan was a Punjabi Sikh Khatri from Lyallpur,
+            Punjab, British India (present-day Faisalabad, Punjab,
+            Pakistan).[15][18] Bachchan has a younger brother, Ajitabh, he is 5
+            years younger than him.[19] Bachchan's parents were initially going
+            to name him Inquilaab (Hindustani for "Revolution"), inspired by the
+            phrase Inquilab Zindabad (which translates into English as "Long
+            live the revolution") popularly used during the Indian independence
+            struggle; the name Amitabh was suggested to his father by poet
+            Sumitranandan Pant.[20][1] Although his surname was Shrivastava,
+            Amitabh's father, who opposed the caste system, had adopted the pen
+            name Bachchan ("child-like" in colloquial Hindi), under which he
+            published all of his works.[21] When his father was looking to get
+            him admitted to a school, he and Bachchan's mother decided the
+            family's name should be Bachchan instead of Shrivastava.[22] It is
+            with this last name that Amitabh debuted in films and used for all
+            other practical purposes, Bachchan has become the surname for all of
+            his immediate family.[23] Bachchan's father died in 2003, and his
+            mother in 2007.[24] Bachchan's secondary education was at Boys' High
+            School & College in Allahabad and Sherwood College in Nainital. He
+            attended Kirori Mal College at the University of Delhi in
+            Delhi.[25][26] He graduated with Bachelor of Science degree from
+            Kirori Mal College in 1962.[27][28][29] When Bachchan finished his
+            studies his father approached Prithviraj Kapoor, the founder of
+            Prithvi Theatre and patriarch of the Kapoor acting family, to see if
+            there was an opening for him, but Kapoor offered no
+            encouragement.[30] Bachchan was a friend of Rajiv Gandhi and Sanjay
+            Gandhi, before he became an actor. He used to spend time with them
+            when he was a resident in New Delhi. Bachchan's family were very
+            close to the Nehru-Gandhi family of politicians. When Sonia Gandhi
+            first came to India from Italy before her marriage, Bachchan had
+            received her at the Palam International Airport on 13 January 1968.
+            She spent 48 days at Bachchan's house with his parents before
+            marriage. Indira Gandhi wanted his future daughter-in-law to learn
+            Hindu customs, way from Bachchan family and she did not think its
+            appropriate to keep daughter-in-law in house before marriage. She
+            trusted Bachchans and decided to keep Sonia at their house.[31]
+            Bachchan applied for a role as a newsreader for All India Radio,
+            Delhi but "failed the audition".[30][when?] He became a business
+            executive for Bird & Company in Kolkata (Calcutta),[30][when?]and
+            worked in the theatre before starting his film career.[32] It is
+            thought that his mother might have had some influence in Amitabh
+            Bachchan's choice of career because she always insisted that he
+            should "take centre stage
+          </p>
+          <h4 id="list-item-3"><b> EARLY CAREER</b></h4>
+          <p>
+            Bachchan made his film debut in 1969, as a voice narrator in Mrinal
+            Sen's National Award-winning film Bhuvan Shome.[34] His first acting
+            role was as one of the seven protagonists in the film Saat
+            Hindustani,[35] directed by Khwaja Ahmad Abbas and featuring Utpal
+            Dutt, Anwar Ali (brother of comedian Mehmood), Madhu and Jalal
+            Agha.[36][37] Anand (1971) followed, in which Bachchan starred
+            alongside Rajesh Khanna. His role as a doctor with a cynical view of
+            life garnered Bachchan his first Filmfare Award for Best Supporting
+            Actor. He then played his first antagonist role as an infatuated
+            lover-turned-murderer in Parwana (1971). Following Parwana were
+            several films including Reshma Aur Shera (1971). During this time,
+            he made a guest appearance in the film Guddi which starred his
+            future wife Jaya Bhaduri. He narrated part of the film Bawarchi. In
+            1972, he made an appearance in the road action comedy Bombay to Goa
+            directed by S. Ramanathan which was moderately successful.[38][39]
+            Many of Bachchan's films during this early period did not do
+            well.[40] His only film with Mala Sinha, Sanjog (1972) was also a
+            box office failure.n 1975, he starred in a variety of film genres,
+            from the comedy Chupke Chupke and the crime drama Faraar to the
+            romantic drama Mili. This was also the year in which Bachchan
+            starred in two films regarded as important in Hindi cinema history,
+            both written by Salim-Javed, who again insisted on casting
+            Bachchan.[45] The first was Deewaar, directed by Yash Chopra, where
+            he worked with Shashi Kapoor, Nirupa Roy, Parveen Babi, and Neetu
+            Singh, and earned another Filmfare nomination for Best Actor. The
+            film became a major hit at the box office in 1975, ranking in at
+            number four.[53] Indiatimes Movies ranks Deewaar amongst the Top 25
+            Must See Bollywood Films.[54] The other, released on 15 August 1975,
+            was Sholay, which became the highest-grossing film ever in India at
+            the time,[55] in which Bachchan played the role of Jaidev. Deewaar
+            and Sholay are often credited with exalting Bachchan to the heights
+            of superstardom, two years after he became a star with Zanjeer, and
+            consolidating his domination of the industry throughout the 1970s
+            and 1980s.[56][57] In 1999, BBC India declared Sholay the "Film of
+            the Millennium" and, like Deewaar, it has been cited by Indiatimes
+            Movies as amongst the Top 25 Must See Bollywood Films.[54] In that
+            same year, the judges of the 50th annual Filmfare Awards awarded it
+            with the special distinction award called the Filmfare Best Film of
+            50 Years. In 1976, he was cast by Yash Chopra in the romantic family
+            drama Kabhie Kabhie. Bachchan starred as a young poet, Amit
+            Malhotra, who falls deeply in love with a beautiful young girl named
+            Pooja (Rakhee Gulzar) who ends up marrying someone else (Shashi
+            Kapoor). The film was notable for portraying Bachchan as a romantic
+            hero, a far cry from his "angry young man" roles like Zanjeer and
+            Deewaar. The film evoked a favourable response from critics and
+            audiences alike. Bachchan was again nominated for the Filmfare Best
+            Actor Award for his role in the film. That same year he played a
+            double role in the hit Adalat as father and son. In 1977, he won his
+            first Filmfare Best Actor Award for his performance in Amar Akbar
+            Anthony, in which he played the third lead opposite Vinod Khanna and
+            Rishi Kapoor as Anthony Gonsalves. The film was the highest-grossing
+            film of that year. His other successes that year include Parvarish
+            and Khoon Pasina.[58] He once again resumed double roles in films
+            such as Kasme Vaade (1978) as Amit and Shankar and Don (1978)
+            playing the characters of Don, a leader of an underworld gang and
+            his look-alike Vijay. His performance won him his second Filmfare
+            Best Actor Award. He also gave towering performances in Yash
+            Chopra's Trishul and Prakash Mehra's Muqaddar Ka Sikandar both of
+            which earned him further Filmfare Best Actor nominations. 1978 is
+            arguably considered his most successful year at the box office since
+            all of his six releases the same year, namely Muqaddar Ka Sikandar,
+            Trishul, Don, Kasme Vaade, Ganga Ki Saugandh and Besharam were
+            massive successes, the former three being the consecutive
+            highest-grossing films of the year, remarkably releasing within a
+            month of each other, a rare feat in Indian cinema.[59][60] In 1979,
+            Bachchan starred in Suhaag which was the highest earning film of
+            that year. In the same year he also enjoyed critical acclaim and
+            commercial success with films like Mr. Natwarlal, Kaala Patthar, The
+            Great Gambler and Manzil. Amitabh was required to use his singing
+            voice for the first time in a song from the film Mr. Natwarlal in
+            which he starred with Rekha. Bachchan's performance in the film saw
+            him nominated for both the Filmfare Best Actor Award and the
+            Filmfare Award for Best Male Playback Singer. He also received Best
+            Actor nomination for Kaala Patthar and then went on to be nominated
+            again in 1980 for the Raj Khosla directed film Dostana, in which he
+            starred opposite Shatrughan Sinha and Zeenat Aman. Dostana proved to
+            be the top-grossing film of 1980.[61] In 1981, he starred in Yash
+            Chopra's melodrama film Silsila, where he starred alongside his wife
+            Jaya and also Rekha. Other successful films of this period include
+            Shaan (1980), Ram Balram (1980), Naseeb (1981), Lawaaris (1981),
+            Kaalia (1981), Yaarana (1981), Barsaat Ki Ek Raat (1981) and Shakti
+            (1982), also starring Dilip Kumar.[62][63] In 1982, he played double
+            roles in the musical Satte Pe Satta and action drama Desh Premee
+            which succeeded at the box office along with mega hits like action
+            comedy Namak Halaal, action drama Khud-Daar and the critically
+            acclaimed drama Bemisal.[64] In 1983, he played a triple role in
+            Mahaan which was not as successful as his previous films.[65] Other
+            releases during that year included Nastik and Pukar which were hits
+            and Andha Kanoon (in which he had an extended guest appearance) was
+            an average grosser.[62][verification needed] During a stint in
+            politics from 1984 to 1987, his completed films Mard (1985) and
+            Aakhree Raasta (1986) were released and were major hits.[66]
+            Bachchan had played a role in a special appearance for the movie
+            Kaun Jeeta Kaun Haara in the year 1987 and he sang a playback song
+            with Kishore Kumar in this movie.[67] On 26 July 1982, while filming
+            a fight scene with co-actor Puneet Issar for Coolie, Bachchan had
+            near-fatal intestinal injury.[68] Bachchan was performing his own
+            stunts in the film and one scene required him to fall onto a table
+            and then on the ground. However, as he jumped towards the table, the
+            corner of the table struck his abdomen, resulting in a splenic
+            rupture from which he lost a significant amount of blood. He
+            required an emergency splenectomy and remained critically ill in
+            hospital for many months, at times close to death. There were long
+            queues of well-wishing fans outside the hospital where he was
+            recuperating; the public response included prayers in temples and
+            offers to sacrifice limbs to save him.[69] Nevertheless, he resumed
+            filming later that year after a long period of recuperation. The
+            director, Manmohan Desai, altered the ending of Coolie: Bachchan's
+            character was originally intended to have been killed off; but,
+            after the change of script, the character lived in the end. Desai
+            felt it would have been inappropriate for the man who had just
+            fended off death in real life to be killed on screen. The footage of
+            the fight scene is frozen at the critical moment, and a caption
+            appears onscreen marking it as the instant of the actor's
+            injury.[70] The film was released in 1983, and partly due to the
+            huge publicity of Bachchan's accident, the film was a box office
+            success and the top-grossing film of that year.[71] Later, he was
+            diagnosed with Myasthenia gravis. His illness made him feel weak
+            both mentally and physically and he decided to quit films and
+            venture into politics. At this time he became pessimistic,
+            expressing concern with how a new film would be received, and
+            stating before every release, "Yeh film to flop hogi!" ("This film
+            will flop")
+          </p>
+          <h4 id="list-item-4"><b>OTHERS WORK</b></h4>
+          <p>
+            In 2000, Bachchan hosted the first season of Kaun Banega Crorepati
+            (KBC), the Indian adaptation of the British television game show,
+            Who Wants to Be a Millionaire?. The show was well received.[122] A
+            second season followed in 2005 but its run was cut short by Star
+            Plus when Bachchan fell ill in 2006.[123] In 2009, Bachchan hosted
+            the third season of the reality show Bigg Boss.[124] In 2010,
+            Bachchan hosted the fourth season of KBC.[125] The fifth season
+            started on 15 August 2011 and ended on 17 November 2011. The show
+            became a massive hit with audiences and broke many TRP Records. CNN
+            IBN awarded Indian of the Year- Entertainment to Team KBC and
+            Bachchan. The Show also grabbed all the major Awards for its
+            category.[126] The sixth season was also hosted by Bachchan,
+            commencing on 7 September 2012, broadcast on Sony TV and received
+            the highest number of viewers thus far.[citation needed] In 2014, he
+            debuted in the fictional Sony Entertainment Television TV series
+            titled Yudh playing the lead role of a businessman battling both his
+            personal and professional life
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="/amit.html">
+      <button
+        id="btn"
+        style="
+          height: 60px;
+          width: 320px;
+          margin-left: 500px;
+          background-image: linear-gradient(
+            to right,
+            #d17d6b,
+            #b16962,
+            #905757,
+            #70464a,
+            #50363b,
+            #53333a,
+            #553038,
+            #582d37,
+            #7d3341,
+            #a23848,
+            #c83d4c,
+            #ee434b
+          );
+        "
+      >
+        Scroll To Top
+      </button></a
+    >
+  </body>
+</html>
